@@ -3,7 +3,7 @@
 /*
 const country = 'India';
 const continent = 'Asia';
-const population = 1.42;
+const population = 1441;
 
 console.log(country);
 console.log(continent);
@@ -25,7 +25,7 @@ console.log(
 /*
 const country = 'India';
 const continent = 'Asia';
-const population = 1.42;
+const population = 1441;
 
 const isIsland = false;
 let language;
@@ -43,7 +43,7 @@ console.log(language, typeof language);
 /*
 const country = 'India';
 const continent = 'Asia';
-let population = 1.42;
+let population = 1441;
 
 const isIsland = false;
 
@@ -53,3 +53,37 @@ language = 'Hindi';
 
 // =================================================
 // ================ BASIC OPERATORS ================
+
+/*
+const country = 'India';
+const continent = 'Asia';
+let population = 1441;
+
+const isIsland = false;
+
+let language;
+language = 'Hindi';
+
+const halfPopulation = population / 2;
+population++;
+
+console.log('Population of ' + country + ':', population);
+console.log('Half Population of ' + country + ':', halfPopulation);
+console.log('Is Population of ' + country + ' > Finland:', population > 6);
+console.log('Does India have population less than average:', population < 33);
+
+const description =
+  country +
+  ' is in ' +
+  continent +
+  ", and it's " +
+  population +
+  ' million people speak ' +
+  language +
+  '.';
+
+console.log(description);
+*/
+
+// =============================================================
+// ================ STRINGS & TEMPLATE LITERALS ================
