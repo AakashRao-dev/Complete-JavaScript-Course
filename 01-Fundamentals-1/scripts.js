@@ -109,3 +109,39 @@ console.log(century);
 
 // ================================================================
 // =================== TYPE CONVERSION/COERCION ===================
+
+/*
+// Type conversion: explicitly converting types
+const inputYear = '1991';
+
+let x;
+
+// Different ways of converting String to Number
+x = Number(inputYear) + 1;
+x = +inputYear + 1;
+x = parseInt(inputYear) + 1;
+
+// NaN - invalid number
+x = Number('Aakash');
+
+// Converting to String
+x = String(786);
+x = 900 + '';
+
+console.log(x, typeof x);
+
+// Type Coercion - Happens automatically behind the scenes
+console.log("I'm " + 21 + ' years old!');
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+console.log('23' / '2');
+
+// GUESS THE OUTPUT
+let n = '1' + 1;
+n = n - 1;
+
+console.log(n);
+*/
+
+// =============================================================
+// =================== TRUTHY & FALSY VALUES ===================
