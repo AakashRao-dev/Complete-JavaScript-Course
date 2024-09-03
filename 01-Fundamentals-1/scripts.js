@@ -49,3 +49,38 @@ console.log(x);
 
 // ===========================================================
 // =============== STRINGS & TEMPLATE LITERALS ===============
+
+/*
+const firstName = 'Aakash';
+const job = 'student';
+const birthYear = 2003;
+const currentYear = 2024;
+
+const desc =
+  "I'm " +
+  firstName +
+  ' a ' +
+  (currentYear - birthYear) +
+  ' years old ' +
+  job +
+  '!';
+console.log(desc);
+
+// TEMPLATE LITERAL
+const descNew = `I'm ${firstName} a ${
+  currentYear - birthYear
+} years old ${job}!`;
+console.log(descNew);
+
+console.log(`Just a regular string...`);
+console.log(`
+---> This is a
+     multi 
+     line string <---
+`);
+
+console.log('---> String with \nmultiple \nlines <---');
+*/
+
+// ==========================================================
+// =================== IF/ELSE STATEMENTS ===================
