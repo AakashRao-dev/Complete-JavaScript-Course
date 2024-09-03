@@ -21,3 +21,21 @@ console.log(
 
 // ============================================
 // ================ DATA TYPES ================
+
+/*
+const country = 'India';
+const continent = 'Asia';
+const population = 1.42;
+
+const isIsland = false;
+let language;
+
+console.log(country, typeof country);
+console.log(continent, typeof continent);
+console.log(population, typeof population);
+console.log(isIsland, typeof isIsland);
+console.log(language, typeof language);
+*/
+
+// ==================================================
+// ================ LET, CONST & VAR ================
