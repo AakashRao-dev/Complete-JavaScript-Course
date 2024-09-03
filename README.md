@@ -1,2 +1,3 @@
 # Complete-JavaScript-Course
-Learning JavaScript from beginner to advanced level JavaScript including challenges and projects
+
+Learning JavaScript from beginner to advanced level including exercises, challenges and projects
