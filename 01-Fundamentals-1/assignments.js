@@ -39,3 +39,17 @@ console.log(language, typeof language);
 
 // ==================================================
 // ================ LET, CONST & VAR ================
+
+/*
+const country = 'India';
+const continent = 'Asia';
+let population = 1.42;
+
+const isIsland = false;
+
+let language;
+language = 'Hindi';
+*/
+
+// =================================================
+// ================ BASIC OPERATORS ================
