@@ -87,3 +87,17 @@ console.log(description);
 
 // =============================================================
 // ================ STRINGS & TEMPLATE LITERALS ================
+
+/*
+const country = 'India';
+const continent = 'Asia';
+let population = 1441;
+
+const isIsland = false;
+
+let language;
+language = 'Hindi';
+
+const description = `${country} is in ${continent} and it's ${population} million people speak ${language}.`;
+console.log(description);
+*/
