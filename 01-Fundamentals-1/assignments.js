@@ -101,3 +101,25 @@ language = 'Hindi';
 const description = `${country} is in ${continent} and it's ${population} million people speak ${language}.`;
 console.log(description);
 */
+
+// =============================================================
+// ============ TAKING DECISIONS: IF/ELSE STATMENTS ============
+
+/*
+const country = 'India';
+const continent = 'Asia';
+let population = 1441;
+
+const isIsland = false;
+
+let language;
+language = 'Hindi';
+
+if (population > 33) {
+  console.log(`${country}'s population is above average!`);
+} else {
+  console.log(
+    `${country}'s population is ${33 - population} million below average!`
+  );
+}
+*/
