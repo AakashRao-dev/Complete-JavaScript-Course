@@ -84,3 +84,25 @@ console.log('---> String with \nmultiple \nlines <---');
 
 // ==========================================================
 // =================== IF/ELSE STATEMENTS ===================
+
+/*
+const age = 15;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log(`You can go for having driving license :)`);
+} else {
+  console.log(`You cannot drive, please wait for ${18 - age} more years :-`);
+}
+
+// if-else statment/(control structure)
+const birthYear = 2003;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
