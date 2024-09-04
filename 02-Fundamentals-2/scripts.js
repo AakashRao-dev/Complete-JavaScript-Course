@@ -195,4 +195,26 @@ const ages = [
 console.log(ages);
 */
 
-// =====================================================
+// =========================================================
+// ================== BASIC ARRAY METHODS ==================
+
+/*
+const friends = ['Amit', 'Adarsh', 'Ajay'];
+
+// Add elements - returns length of the new array
+friends.push('Aditya');
+friends.unshift('Anas');
+
+// Remove elements - returns the removed element of the array
+friends.pop();
+friends.shift();
+
+console.log(friends.indexOf('Bob'));
+console.log(friends.includes('Amit'));
+
+if (friends.includes('Amit')) {
+  console.log('Yes, you have a friend called Amit!');
+}
+
+console.log(friends);
+*/
