@@ -50,3 +50,29 @@ console.log(appleOrangeJuice);
 
 // ==========================================================
 // ========== FUNCTION DECLARATION VS. EXPRESSIONS ==========
+
+// parameter: placeholder that holds the value
+// argument: actual value passed during calling the function
+
+// difference: function declartions can be called before even they are declared due to "Hoisting"
+
+/*
+// FUNCTION DECLARATION
+function calcAge1(birthYear) {
+  return 2024 - birthYear;
+}
+
+const age1 = calcAge1(2003);
+console.log(age1);
+
+// FUNCTION EXPRESSION
+const calcAge2 = function (birthYear) {
+  return 2024 - birthYear;
+};
+
+const age2 = calcAge2(2008);
+console.log(age2);
+*/
+
+// =========================================================
+// ==================== ARROW FUNCTIONS ====================
