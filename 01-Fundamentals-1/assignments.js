@@ -154,3 +154,21 @@ if (numNeighbours === 1) {
 
 // =======================================================
 // ================== LOGICAL OPERATORS ==================
+
+/*
+const country = 'India';
+const continent = 'Asia';
+let population = 1441;
+
+const isIsland = false;
+const language = 'Hindi';
+
+if (language === 'English' && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not meet your criteria :(`);
+}
+*/
+
+// ==========================================================
+// ================== THE SWITCH STATEMENT ==================
