@@ -88,4 +88,21 @@ const percentages = [
 console.log(percentages);
 */
 
-// ======================================================
+// =====================================================
+// ================ BASIC ARRAY METHODS ================
+
+/*
+const neighbours = ['India', 'Pakistan', 'Bangladesh', 'Nepal'];
+
+neighbours.push('Utopia');
+neighbours.pop();
+
+if (!neighbours.includes('Germany'))
+  console.log('Probably not a central european country :D');
+
+neighbours[neighbours.indexOf('Pakistan')] = 'Akhand Bharat';
+
+console.log(neighbours);
+*/
+
+// =====================================================
