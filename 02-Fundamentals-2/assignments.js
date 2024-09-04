@@ -23,6 +23,10 @@ function percentageOfWorld1(population) {
   return (population / 7900) * 100;
 }
 
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+}
+
 const malaysiaPopPercent = percentageOfWorld1(33.4);
 const chinaPopPercent = percentageOfWorld1(1441);
 const taiwanPopPercent = percentageOfWorld1(23.4);
@@ -31,3 +35,18 @@ console.log(malaysiaPopPercent);
 console.log(chinaPopPercent);
 console.log(taiwanPopPercent);
 */
+
+// =========================================================
+// ==================== ARROW FUNCTIONS ====================
+
+/*
+const percentageOfWorld3 = population => (population / 7900) * 100;
+
+const malaysiaPopPercent = percentageOfWorld3(33.4);
+const chinaPopPercent = percentageOfWorld3(1441);
+const taiwanPopPercent = percentageOfWorld3(23.4);
+
+console.log(malaysiaPopPercent, chinaPopPercent, taiwanPopPercent);
+*/
+
+// =========================================================
