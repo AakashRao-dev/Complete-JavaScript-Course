@@ -176,3 +176,35 @@ if (height) {
 
 // ======================================================================
 // =================== EQUALITY OPERATORS: == vs. === ===================
+
+// Loose Equality Operator: Performs type coercion
+
+// 18 == '18'
+// '18' (the string) will get converted to 18 (the number) and then perform a equality check
+
+// CLEAN CODE: ALWAYS USE STRICT EQUALITY OPERATOR
+
+/*
+const age = '18';
+
+if (age == 18) console.log('You just became an adult :D (LOOSE)');
+if (age === 18) console.log('You just became an adult :D (STRICT)');
+
+const favoriteNum = +prompt("What's your favorite number?");
+console.log(favoriteNum, typeof favoriteNum);
+
+if (favoriteNum === 23) {
+  console.log('Cool, 23 is an amazing number!');
+} else if (favoriteNum === 7) {
+  console.log('7 is also a cool number');
+} else {
+  console.log(
+    `Number is not 23 or 7! But ${favoriteNum} is also a great number :)`
+  );
+}
+
+if (favoriteNum !== 23) console.log('Why not the 23?');
+*/
+
+// =====================================================
+// =================== BOOLEAN LOGIC ===================
