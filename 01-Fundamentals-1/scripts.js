@@ -235,5 +235,53 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 }
 */
 
-// =========================================================
+// ============================================================
 // =================== THE SWITCH STATEMENT ===================
+
+/*
+const day = 'friday';
+
+switch (day) {
+  case 'monday': // day === 'monday'
+    console.log('Plan week structure');
+    console.log('Design & Build');
+    break;
+  case 'tuesday':
+    console.log('Start working on the Project');
+    console.log('Contribute to Open Source');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Work on Heavy');
+    console.log('Open Source Contribution');
+    break;
+  case 'friday':
+    console.log('Write a blog');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Learn & Explore Something new');
+    console.log('Build a heavy project!');
+    break;
+  default:
+    console.log('Not a valid day!');
+}
+
+if (day === 'monday') {
+  console.log('Plan week structure');
+  console.log('Design & Build');
+} else if (day === 'tuesday') {
+  console.log('Start working on the Project');
+  console.log('Contribute to Open Source');
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Work on Heavy');
+  console.log('Open Source Contribution');
+} else if (day === 'friday') {
+  console.log('Write a blog');
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Learn & Explore Something new');
+  console.log('Build a heavy project!');
+} else {
+  console.log('Not a valid day!');
+}
+*/
