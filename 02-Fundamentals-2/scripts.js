@@ -76,3 +76,24 @@ console.log(age2);
 
 // =========================================================
 // ==================== ARROW FUNCTIONS ====================
+
+/*
+const calcAge3 = birthYear => 2024 - birthYear;
+
+const age3 = calcAge3(2003);
+console.log(age3);
+
+const yearUntilRetirement = (birthYear, firstName) => {
+  const age = 2024 - birthYear;
+  const retirement = 65 - age;
+  //   return retirement;
+  console.log(this);
+  return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(yearUntilRetirement(2003, 'Aakash'));
+console.log(yearUntilRetirement(2008, 'Aakash'));
+*/
+
+// =========================================================
+// =========== FUNCTIONS CALLING OTHER FUNCTIONS ===========
