@@ -66,3 +66,26 @@ console.log(describePopulation('India', 1450));
 console.log(describePopulation('China', 1441));
 console.log(describePopulation('USA', 333));
 */
+
+// ======================================================
+// =============== INTRODUCTION TO ARRAYS ===============
+
+/*
+const populations = [1450, 1441, 333, 23];
+console.log(populations.length === 4);
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const percentages = [
+  percentageOfWorld1([populations[0]]),
+  percentageOfWorld1([populations[1]]),
+  percentageOfWorld1([populations[2]]),
+  percentageOfWorld1([populations[3]]),
+];
+
+console.log(percentages);
+*/
+
+// ======================================================
