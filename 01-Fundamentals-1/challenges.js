@@ -48,3 +48,23 @@ if (BMIMark > BMIJohn) {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})`);
 }
 */
+
+// =============================================
+// ================ CHALLENGE-3 ================
+
+// Data:
+// Dolphins = [96, 108, 89]
+// Koalas = [88, 91, 110]
+
+/*
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+if (scoreDolphins > scoreKoalas) {
+  console.log('Dolphins win the trophy');
+} else if (scoreDolphins === scoreKoalas) {
+  console.log('Both win the trophy');
+} else {
+  console.log('Koalas win the trophy');
+}
+*/
