@@ -51,7 +51,7 @@ console.log(appleOrangeJuice);
 // ==========================================================
 // ========== FUNCTION DECLARATION VS. EXPRESSIONS ==========
 
-// parameter: placeholder that holds the value
+// parameter: placeholder to recieve input values
 // argument: actual value passed during calling the function
 
 // difference: function declartions can be called before even they are declared due to "Hoisting"
@@ -112,4 +112,44 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+// =====================================================
+// ================ REVIEWING FUNCTIONS ================
+
+// Function - revieve input data - transform data - output data
+
+// Function Body - Block of code that we want to reuse. Processes the function's input data
+
+// return - statement to output a value from the function & terminate execution
+
+// Arguments - Actual value of function parameters, to input data
+
+// 3 Different Function Types:
+
+// 1. Declaration: can be used before it's declared
+// 2. Expression: function value stored in a variable
+// 2. Arrow: Great for one liner functions. Has no "this" keyword
+
+/*
+const calcAge = function (birthYear) {
+  return 2024 - birthYear;
+};
+
+const yearUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    return retirement;
+  } else {
+    return -1;
+  }
+
+  // return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(yearUntilRetirement(2003, 'Aakash'));
+console.log(yearUntilRetirement(2008, 'Aishwarya'));
+console.log(yearUntilRetirement(1940, 'Aishwarya'));
 */
