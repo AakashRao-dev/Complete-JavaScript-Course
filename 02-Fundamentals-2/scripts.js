@@ -218,3 +218,31 @@ if (friends.includes('Amit')) {
 
 console.log(friends);
 */
+
+// ========================================================
+// =================== INTRO TO OBJECTS ===================
+
+/*
+const aakashArray = [
+  'Aakash',
+  'Rao',
+  2024 - 2003,
+  'Frontend Developer',
+  ['Amit', 'Adarsh', 'Ajay'],
+];
+console.log(aakashArray);
+// order of the values matters - bcz we access using order number
+
+const aakash = {
+  firstName: 'Aakash',
+  lastNam: 'Rao',
+  age: 2024 - 2003,
+  job: 'Frontend Developer',
+  friends: ['Amit', 'Adarsh', 'Ajay'],
+};
+console.log(aakash);
+// order of the values does not matter - bcz we access using property name
+*/
+
+// ====================================================
+// ============= DOT vs. BRACKET NOTATION =============
