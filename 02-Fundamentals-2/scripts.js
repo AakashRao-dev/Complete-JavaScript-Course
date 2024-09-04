@@ -153,3 +153,46 @@ console.log(yearUntilRetirement(2003, 'Aakash'));
 console.log(yearUntilRetirement(2008, 'Aishwarya'));
 console.log(yearUntilRetirement(1940, 'Aishwarya'));
 */
+
+// =====================================================
+// ================== INTRO TO ARRAYS ==================
+
+/*
+const friend1 = 'Amit';
+const friend2 = 'Adarsh';
+const friend3 = 'Ajay';
+
+// Literal Syntax
+const friends = ['Amit', 'Adarsh', 'Ajay'];
+console.log(friends);
+
+// Constructor Syntax
+// const years = new Array(1973, 1975, 2003, 2008);
+
+console.log(friends[0]);
+console.log(friends.length);
+
+friends[2] = 'Atharva';
+console.log(friends);
+
+const job = 'Frontend Developer';
+const aakash = ['Aakash', 'Rao', 2024 - 2003, job, friends];
+console.log(aakash);
+console.log(aakash.length);
+
+// Exercise
+const calcAge = function (birthYear) {
+  return 2024 - birthYear;
+};
+const years = [1973, 1975, 2003, 2008];
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[2]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
+*/
+
+// =====================================================
