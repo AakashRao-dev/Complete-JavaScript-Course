@@ -50,3 +50,19 @@ console.log(malaysiaPopPercent, chinaPopPercent, taiwanPopPercent);
 */
 
 // =========================================================
+// =========== FUNCTIONS CALLING OTHER FUNCTIONS ===========
+
+/*
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const describePopulation = function (country, population) {
+  const percentageOfWorld = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentageOfWorld} of the world.`;
+};
+
+console.log(describePopulation('India', 1450));
+console.log(describePopulation('China', 1441));
+console.log(describePopulation('USA', 333));
+*/
