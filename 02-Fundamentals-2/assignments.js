@@ -105,4 +105,15 @@ neighbours[neighbours.indexOf('Pakistan')] = 'Akhand Bharat';
 console.log(neighbours);
 */
 
-// =====================================================
+// =======================================================
+// =============== INTRODUCTION TO OBJECTS ===============
+
+/*
+const japan = {
+  country: 'Japan',
+  capital: 'Tokyo',
+  language: 'Japanese',
+  population: 124,
+  neighbours: ['South Korea', 'Australia'],
+};
+*/
