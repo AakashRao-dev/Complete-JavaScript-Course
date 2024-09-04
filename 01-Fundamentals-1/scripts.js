@@ -285,3 +285,21 @@ if (day === 'monday') {
   console.log('Not a valid day!');
 }
 */
+
+// ================================================================
+// =================== STATEMENTS & EXPRESSIONS ===================
+
+// Expression: A piece of code that produces a value
+// Statement: A bigger piece of code that is executed and which does not produce a value itself
+
+/*
+if (23 > 10) {
+  const str = '23 is bigger';
+}
+
+const me = 'Aakash';
+console.log(`I'm ${2024 - 2003} years old ${me}.`);
+*/
+
+// ======================================================================
+// =================== CONDITIONAL (TERNARY OPERATOR) ===================
