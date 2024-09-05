@@ -168,3 +168,30 @@ myCountry.checkIsland = function () {
 myCountry.checkIsland();
 console.log(myCountry);
 */
+
+// ===================================================
+// ============= ITERATION: THE FOR LOOP =============
+
+/*
+for (let i = 1; i < 51; i++) {
+  console.log(`Voter number ${i} is currently voting`);
+}
+*/
+
+// ===================================================
+// ====== LOOPING ARRAYS: BREAKING & CONTINUING ======
+
+/*
+const populations = [1450, 1441, 333, 23];
+const percentages2 = [];
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+
+console.log(percentages2);
+*/
