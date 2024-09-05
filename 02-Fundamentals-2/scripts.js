@@ -235,7 +235,7 @@ console.log(aakashArray);
 
 const aakash = {
   firstName: 'Aakash',
-  lastNam: 'Rao',
+  lastName: 'Rao',
   age: 2024 - 2003,
   job: 'Frontend Developer',
   friends: ['Amit', 'Adarsh', 'Ajay'],
@@ -246,3 +246,44 @@ console.log(aakash);
 
 // ====================================================
 // ============= DOT vs. BRACKET NOTATION =============
+
+/*
+const aakash = {
+  firstName: 'Aakash',
+  lastName: 'Rao',
+  age: 2024 - 2003,
+  job: 'Frontend Developer',
+  friends: ['Amit', 'Adarsh', 'Ajay'],
+};
+console.log(aakash);
+
+// dot notation
+console.log(aakash.lastName);
+
+// bracket notation
+console.log(aakash['lastName']);
+
+const nameKey = 'Name';
+console.log(aakash['first' + nameKey]);
+console.log(aakash[`last${nameKey}`]);
+
+const promptKey = prompt(
+  'What do you want to know about Aakash? Choose between - firstName, lastName, age or friends'
+);
+console.log(
+  aakash[promptKey] ? aakash[promptKey] : 'Wrong input :D Try again!!'
+);
+
+aakash.location = 'India';
+aakash['twitter'] = '@aakash_codes';
+console.log(aakash);
+
+// CHALLENGE
+// "Aakash has 3 friends, and his best friend is called Amit"
+
+console.log(
+  `${aakash.firstName} has ${aakash.friends.length} friends, and his best friend is called ${aakash.friends[0]}.`
+);
+*/
+
+// ====================================================
