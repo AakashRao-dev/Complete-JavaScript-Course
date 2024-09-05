@@ -353,3 +353,52 @@ for (let i = 1; i < 11; i++) {
 
 // =====================================================
 // ======= LOOPING ARRAYS, BREAKING & CONTINUING =======
+
+// BREAK & CONTINUE
+
+// continue: (skip) exits the current iteration of the loop and continue to next one
+
+// break: completly terminate the whole loop
+
+/*
+const aakashArray = [
+  'Aakash',
+  'Rao',
+  2024 - 2003,
+  'Frontend Developer',
+  ['Amit', 'Adarsh', 'Ajay'],
+];
+
+const types = [];
+
+for (let i = 0; i < aakashArray.length; i++) {
+  // Reading from aakash array
+  console.log(aakashArray[i], typeof aakashArray[i]);
+
+  // Filling types array
+  // types[i] = typeof aakashArray[i];
+  types.push(typeof aakashArray[i]);
+}
+
+console.log(types);
+
+const birthYears = [1973, 1975, 2003, 2008];
+const ages = [];
+
+for (let i = 0; i < birthYears.length; i++) {
+  ages.push(2024 - birthYears[i]);
+}
+console.log(ages);
+
+console.log('======== CONTINUE ========');
+for (let i = 0; i < aakashArray.length; i++) {
+  if (typeof aakashArray[i] !== 'string') continue;
+  console.log(aakashArray[i], typeof aakashArray[i]);
+}
+
+console.log('======== BREAK ========');
+for (let i = 0; i < aakashArray.length; i++) {
+  if (typeof aakashArray[i] === 'number') break;
+  console.log(aakashArray[i], typeof aakashArray[i]);
+}
+*/
