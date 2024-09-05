@@ -426,3 +426,27 @@ for (let i = 1; i < 4; i++) {
   }
 }
 */
+
+// ====================================================
+// ================== THE WHILE LOOP ==================
+
+/*
+console.log('========= FOR LOOP =========');
+for (let i = 1; i < 11; i++) {
+  console.log(`Lifting weights repetion ${i} 🏋️`);
+}
+
+console.log('========= WHILE LOOP =========');
+let i = 1;
+while (i < 11) {
+  console.log(`Lifting weights repetion ${i} 🏋️`);
+  i++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to End...');
+}
+*/
