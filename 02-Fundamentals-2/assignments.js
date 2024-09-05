@@ -212,3 +212,23 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
   }
 }
 */
+
+// ======================================================
+// =================== THE WHILE LOOP ===================
+
+/*
+const populations = [1450, 1441, 333, 23];
+const percentages3 = [];
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+let i = 0;
+while (i < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[i]));
+  i++;
+}
+
+console.log(percentages3);
+*/
