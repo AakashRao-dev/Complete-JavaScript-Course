@@ -327,3 +327,29 @@ aakash.getSummary = function () {
 
 console.log(aakash.getSummary());
 */
+
+// ===================================================
+// ============= ITERATION: THE FOR LOOP =============
+
+/*
+console.log('Lifting weights repetion 1 🏋️');
+console.log('Lifting weights repetion 2 🏋️');
+console.log('Lifting weights repetion 3 🏋️');
+console.log('Lifting weights repetion 4 🏋️');
+console.log('Lifting weights repetion 5 🏋️');
+console.log('Lifting weights repetion 6 🏋️');
+console.log('Lifting weights repetion 7 🏋️');
+console.log('Lifting weights repetion 8 🏋️');
+console.log('Lifting weights repetion 9 🏋️');
+console.log('Lifting weights repetion 10 🏋️');
+
+console.log('======== FOR LOOP ========');
+
+// (initialization; condition; afterthought;)
+for (let i = 1; i < 11; i++) {
+  console.log(`Lifting weights repetion ${i} 🏋️`);
+}
+*/
+
+// =====================================================
+// ======= LOOPING ARRAYS, BREAKING & CONTINUING =======
