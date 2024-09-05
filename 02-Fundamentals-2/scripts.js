@@ -286,4 +286,44 @@ console.log(
 );
 */
 
-// ====================================================
+// ==================================================
+// ================= OBJECT METHODS =================
+
+// Any function that is attached to an object is called a method
+
+/*
+const aakash = {
+  firstName: 'Aakash',
+  lastName: 'Rao',
+  birthYear: 2003,
+  job: 'Frontend Developer',
+  friends: ['Amit', 'Adarsh', 'Ajay'],
+  hasDriversLicense: true,
+
+  // calcAge: function () {
+  //   return 2024 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+};
+
+aakash.calcAge();
+
+console.log(aakash.age);
+console.log(aakash.age);
+console.log(aakash.age);
+
+console.log(aakash);
+
+// CHALLENGE
+aakash.getSummary = function () {
+  return `${this.firstName} ${this.lastName} is a ${this.age} years old ${
+    this.job
+  }, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+};
+
+console.log(aakash.getSummary());
+*/
