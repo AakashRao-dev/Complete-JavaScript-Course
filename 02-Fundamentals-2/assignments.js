@@ -109,11 +109,62 @@ console.log(neighbours);
 // =============== INTRODUCTION TO OBJECTS ===============
 
 /*
-const japan = {
+const myCountry = {
   country: 'Japan',
   capital: 'Tokyo',
   language: 'Japanese',
   population: 124,
-  neighbours: ['South Korea', 'Australia'],
+  neighbours: [],
 };
+*/
+
+// ==================================================
+// ============ DOT vs. BRACKET NOTATION ============
+
+/*
+const myCountry = {
+  country: 'Japan',
+  capital: 'Tokyo',
+  language: 'Japanese',
+  population: 124,
+  neighbours: [],
+};
+
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2;
+console.log(myCountry.population);
+*/
+
+// ==================================================
+// ================= OBJECT METHODS =================
+
+/*
+const myCountry = {
+  country: 'Japan',
+  capital: 'Tokyo',
+  language: 'Japanese',
+  population: 124,
+  neighbours: [],
+};
+
+myCountry.describe = function () {
+  console.log(
+    `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+  );
+};
+
+myCountry.describe();
+
+myCountry.checkIsland = function () {
+  this.isIsland = this.neighbours.length > 0 ? false : true;
+};
+
+myCountry.checkIsland();
+console.log(myCountry);
 */
