@@ -402,3 +402,27 @@ for (let i = 0; i < aakashArray.length; i++) {
   console.log(aakashArray[i], typeof aakashArray[i]);
 }
 */
+
+// ========================================================
+// ========== LOOPING BACKWARDS & LOOPS IN LOPPS ==========
+
+/*
+const aakashArray = [
+  'Aakash',
+  'Rao',
+  2024 - 2003,
+  'Frontend Developer',
+  ['Amit', 'Adarsh', 'Ajay'],
+];
+
+for (let i = aakashArray.length - 1; i >= 0; i--) {
+  console.log(i, aakashArray[i]);
+}
+
+for (let i = 1; i < 4; i++) {
+  console.log(`=========== STARTING EXERCISE ${i}`);
+  for (let j = 1; j < 6; j++) {
+    console.log(`Exercise ${i}: Lifting weights rep ${j} 🏋️`);
+  }
+}
+*/
