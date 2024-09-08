@@ -9,8 +9,23 @@
   <body>
     <h1>Pig Game</h1>
 
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h3>Rules of Pig Game</h3>
+      <ul>
+        <li>First Player to reach <strong>100 Points</strong> wins the game</li>
+        <li>
+          If you role a <strong>1 on dice</strong> you lose your current points
+        </li>
+        <li>
+          To save your current points from losing <strong>click 📥 hold</strong>
+        </li>
+      </ul>
+    </div>
+
     <main>
-      <section class="player player--0 player--active">
+      <section class="player player--0 player--active player--winner">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">43</p>
         <div class="current">
