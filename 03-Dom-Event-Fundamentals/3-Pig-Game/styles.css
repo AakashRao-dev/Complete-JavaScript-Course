@@ -22,7 +22,7 @@ body {
   display: grid;
   place-content: center;
   gap: 3rem;
-  padding: 4rem;
+  padding: 2rem 4rem;
 }
 
 /* MODAL WINDOW */
@@ -139,7 +139,7 @@ main {
 }
 
 .score {
-  font-size: clamp(3vw, 60px, 5vw);
+  font-size: clamp(5vw, 50px, 10vw);
   font-weight: 300;
   color: #302b63;
   margin-bottom: auto;
@@ -233,7 +233,7 @@ main {
 }
 
 .btn:active {
-  transform: translate(-50%, 3px);
+  transform: scale(0.9);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
