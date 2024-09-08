@@ -113,7 +113,6 @@ main {
 @media screen and (max-width: 720px) {
   main {
     grid-template-columns: 1fr;
-    gap: 4rem;
   }
 }
 
@@ -177,7 +176,7 @@ main {
   }
 
   .player {
-    padding: 6rem 4rem;
+    padding: 3rem;
     gap: 1rem;
   }
 
