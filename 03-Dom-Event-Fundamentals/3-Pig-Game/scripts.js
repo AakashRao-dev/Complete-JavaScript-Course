@@ -16,16 +16,28 @@ const overlay = document.querySelector('.overlay');
 const currentPlayer0El = document.getElementById('current--0');
 const currentPlayer1El = document.getElementById('current--1');
 
+let isPlaying, totalScores, currentScore, activePlayer;
+
 // Starting Conditions
-score0El.textContent = 0;
-score1El.textContent = 0;
-diceEl.classList.add('hidden');
+const initialize = function () {
+  isPlaying = true;
+  totalScores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
 
-const totalScores = [0, 0];
+  currentPlayer0El.textContent = 0;
+  currentPlayer1El.textContent = 0;
+  score0El.textContent = 0;
+  score1El.textContent = 0;
 
-let currentScore = 0;
-let activePlayer = 0;
-let isPlaying = true;
+  diceEl.classList.add('hidden');
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
+  player0El.classList.add('player--active');
+  player1El.classList.remove('player--active');
+};
+
+initialize();
 
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -67,7 +79,7 @@ btnHold.addEventListener('click', function () {
 
     // 2. Check if player's score is >= 100
     // Finish the game
-    if (totalScores[activePlayer] >= 20) {
+    if (totalScores[activePlayer] >= 100) {
       isPlaying = false;
       diceEl.classList.add('hidden');
       document
@@ -82,6 +94,8 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
+
+btnNew.addEventListener('click', initialize);
 
 // MODAL FUNCTIONALITY FOR INSTRUCTIONS
 const closeModal = function () {
