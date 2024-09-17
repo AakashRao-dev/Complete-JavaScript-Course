@@ -36,4 +36,28 @@ function calcAge(birthYear) {
 const firstName = 'Rajlaxmi';
 console.log(calcAge(1975));
 */
-// ===========================================================
+// ============================================================
+// ================ HOISTING & TDZ IN PRACTICE ================
+
+// console.log(me);
+// console.log(job);
+// console.log(year);
+
+var me = 'Aakash';
+let job = 'Frontend Developer';
+const year = 2003;
+
+// FUNCTIONS
+// console.log(addDecl(2, 3));
+// console.log(addExp(2, 3));
+// console.log(addArrow(2, 3));
+
+function addDecl(a, b) {
+  return a + b;
+}
+
+const addExp = function (a, b) {
+  return a + b;
+};
+
+const addArrow = (a, b) => a + b;
