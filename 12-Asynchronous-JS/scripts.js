@@ -50,3 +50,130 @@ getCountryData('South Korea');
 
 // =============================================================
 // ======================= CALLBACK HELL =======================
+
+/*
+const renderCountry = function (data, className = '') {
+  const html = `
+    <article class="country ${className}">
+        <img class="country__img" src="${data.flags.svg}" />
+        <div class="country__data">
+            <h3 class="country__name">${data.name.common}</h3>
+            <h4 class="country__region">${data.region}</h4>
+            <p class="country__row"><span>👫</span>${(
+              +data.population / 1000000
+            ).toFixed(1)} Million</p>
+            <p class="country__row"><span>🗣️</span>${
+              Object.values(data.languages)[0]
+            }</p>
+            <p class="country__row"><span>💰</span>${
+              Object.values(data.currencies)[0].name
+            }</p>
+        </div>
+    </article>
+  `;
+  countriesContainer.insertAdjacentHTML('beforeend', html);
+  countriesContainer.style.opacity = 1;
+};
+
+const getCountryAndNeighbour = function (country) {
+  // AJAX call country 1
+  const request = new XMLHttpRequest();
+  request.open('GET', `https://restcountries.com/v3.1/name/${country}`);
+  request.send();
+
+  request.addEventListener('load', function () {
+    const [data] = JSON.parse(this.responseText);
+    // console.log(data);
+    // Render country 1
+    renderCountry(data);
+
+    // Get Neigbour Country
+    const neighbour = data.borders?.[0];
+    if (!neighbour) return;
+
+    // AJAX call country 2
+    const request2 = new XMLHttpRequest();
+    request2.open('GET', `https://restcountries.com/v3.1/alpha/${neighbour}`);
+    request2.send();
+
+    request2.addEventListener('load', function () {
+      const [data2] = JSON.parse(this.responseText);
+      // console.log(data);
+      // Render country 2
+      renderCountry(data2, 'neighbour');
+    });
+  });
+};
+
+getCountryAndNeighbour('usa');
+
+// Callback hell - Traingle Shape
+setTimeout(() => {
+  console.log('One Second Passed!');
+  setTimeout(() => {
+    console.log('Two Seconds Passed!');
+    setTimeout(() => {
+      console.log('Three Seconds Passed!');
+      setTimeout(() => {
+        console.log('Four Seconds Passed!');
+      }, 1000);
+    }, 1000);
+  }, 1000);
+}, 1000);
+*/
+
+/*
+// Delcaring Functions
+function asyncFunction1(callback) {
+  setTimeout(() => {
+    console.log('Async Function 1 Done');
+    callback();
+  }, 1000);
+}
+
+function asyncFunction2(callback) {
+  setTimeout(() => {
+    console.log('Async Function 2 Done');
+    callback();
+  }, 1000);
+}
+
+function asyncFunction3(callback) {
+  setTimeout(() => {
+    console.log('Async Function 3 Done');
+    callback();
+  }, 1000);
+}
+
+asyncFunction1(() => {
+  asyncFunction2(() => {
+    asyncFunction3(() => {
+      console.log('All Async Functions done!');
+    });
+  });
+});
+*/
+
+/*
+// Same thing without using Arrow function
+function callback3() {
+  console.log('All Async Functions Done');
+}
+function callback2() {
+  asyncFunction3(callback3);
+}
+function callback1() {
+  asyncFunction2(callback2);
+}
+asyncFunction1(callback1);
+*/
+
+//
+// Async Task-1 Done:
+//              run Callback
+// Async Task-2 Done:
+//              run Callback
+// Async Task-3 Done:
+//              run Callback
+
+// =============================================================
