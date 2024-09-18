@@ -281,6 +281,7 @@ getCountryData('India');
 // ================= HANDLING REJECTED PROMISES =================
 
 // lvl-1: Simply attach .catch() after the last .then() method
+// Lvl-2: Use throw new Error() to reject promise and .catch() the error with status 404
 
 const renderCountry = function (data, className = '') {
   const html = `
@@ -302,39 +303,35 @@ const renderCountry = function (data, className = '') {
     </article>
   `;
   countriesContainer.insertAdjacentHTML('beforeend', html);
-  // countriesContainer.style.opacity = 1;
 };
 
 const renderErr = function (msg) {
   countriesContainer.insertAdjacentText('beforeend', msg);
-  // countriesContainer.style.opacity = 1;
+};
+
+const getJSON = function (url, errMsg = 'Something went wrong!') {
+  return fetch(url).then(response => {
+    if (!response.ok) {
+      throw new Error(`${errMsg} (${response.status})`);
+    }
+    return response.json();
+  });
 };
 
 const getCountryData = function (country) {
   // COUNTRY-1
-  fetch(`https://restcountries.com/v3.1/name/${country}`)
-    .then(response => {
-      // THROWING AN ERROR FOR REJECTING THE PROMISE AND CATCHING THAT ERROR
-      if (!response.ok) {
-        throw new Error(`Country not found ${response.status}`);
-      }
-      return response.json();
-    })
+  getJSON(`https://restcountries.com/v3.1/name/${country}`, 'Country not found')
     .then(data => {
       renderCountry(data[0]);
-      // const neighbour = data[0].borders[0];
-      const neighbour = 'dfkjlkdjlk';
+      const neighbour = data[0].borders ? data[0].borders[0] : null;
 
-      if (!neighbour) return;
+      if (!neighbour) throw new Error('No neighbour found!');
 
       // COUNTRY-2
-      return fetch(`https://restcountries.com/v3.1/alpha/${neighbour}`);
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Country not found ${response.status}`);
-      }
-      return response.json();
+      return getJSON(
+        `https://restcountries.com/v3.1/alpha/${neighbour}`,
+        'Country not found'
+      );
     })
     .then(data => renderCountry(data[0], 'neighbour'))
     // lvl-1: Simply attach .catch() after the last .then() method
@@ -348,3 +345,4 @@ const getCountryData = function (country) {
 };
 
 btn.addEventListener('click', () => getCountryData('United Kingdom'));
+getCountryData('Australia');
