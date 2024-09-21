@@ -459,5 +459,47 @@ Promise.resolve('Resolved Promise 2').then(res => {
 console.log('Test end');
 */
 
-// ============================================================
-// ================== EVENT LOOP IN PRACTICE ==================
+// ==============================================================
+// =========== BUILDING A SIMPLE PROMISE FROM SCRATCH ===========
+
+// PROMISIFYING - Conversion of a function that accepts a callback into a function that returns a promise
+
+/*
+const lotteryPromise = new Promise((resolve, reject) => {
+  console.log('Lottery draw is happening 🔮');
+  setTimeout(() => {
+    if (Math.random() >= 0.5) {
+      resolve('You WON! 👍'); // calling this will mark promise as resolved
+    } else {
+      reject(new Error('You LOST YOUR MONEY!! 🥲'));
+    }
+  }, 2000);
+});
+
+lotteryPromise.then(res => console.log(res)).catch(err => console.log(err));
+
+// Promisifying setTimout
+const wait = function (sec) {
+  return new Promise(resolve => {
+    setTimeout(resolve, sec * 1000);
+  });
+};
+
+wait(2)
+  .then(() => {
+    console.log('1 second Passed!');
+    return wait(1);
+  })
+  .then(() => {
+    console.log('2 seconds Passed!');
+    return wait(1);
+  })
+  .then(() => {
+    console.log('3 seconds Passed!');
+    return wait(1);
+  })
+  .then(() => {
+    console.log('4 seconds Passed!');
+    return wait(1);
+  });
+*/
