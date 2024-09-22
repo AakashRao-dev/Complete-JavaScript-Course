@@ -623,6 +623,11 @@ console.log('Getting Position');
 // ========================================================
 // ================== CODING CHALLENGE-2 ==================
 
+// LEARNED ABOUT *SEQUENTIAL EXECUTION* OF PROMISES WITH .THEN()
+
+// CHAIN OF PROMISES: TASK1 - WAIT - TASK2 - TASK3 - WAIT - TASK4
+// When you return a promise from a .then(), the next .then() waits for that promise to resolve before it continues.
+
 /* 
 Build the image loading functionality that I just showed you on the screen.
 
@@ -683,7 +688,7 @@ createImage('./img/img-1.jpg')
     return createImage('./img/img-2.jpg');
   })
   .then(img => {
-    console.log('First Image Loaded!');
+    console.log('Second Image Loaded!');
     currentImage = img;
     return wait(2);
   })
@@ -693,3 +698,6 @@ createImage('./img/img-1.jpg')
   })
   .catch(err => console.log(err));
 */
+
+// =================================================================
+// ============== CONSUMING PROMISES WITH ASYNC/AWAIT ==============
