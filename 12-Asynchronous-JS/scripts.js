@@ -701,3 +701,60 @@ createImage('./img/img-1.jpg')
 
 // =================================================================
 // ============== CONSUMING PROMISES WITH ASYNC/AWAIT ==============
+
+// fetch(`https://restcountries.com/v3.1/name/${country}`)
+//   .then(res => res.json())
+//   .then(data => console.log(data));
+
+/*
+const renderCountry = function (data, className = '') {
+  const html = `
+    <article class="country ${className}">
+        <img class="country__img" src="${data.flags.svg}" />
+        <div class="country__data">
+            <h3 class="country__name">${data.name.common}</h3>
+            <h4 class="country__region">${data.region}</h4>
+            <p class="country__row"><span>👫</span>${(
+              +data.population / 1000000
+            ).toFixed(1)} Million</p>
+            <p class="country__row"><span>🗣️</span>${
+              Object.values(data.languages)[0]
+            }</p>
+            <p class="country__row"><span>💰</span>${
+              Object.values(data.currencies)[0].name
+            }</p>
+        </div>
+    </article>
+  `;
+  countriesContainer.insertAdjacentHTML('beforeend', html);
+};
+
+// BUILDING THE PROMISE IS SAME, FOR CONSUMING WE USE ASYNC AWAIT
+const getPosition = function () {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
+
+const whereAmI = async function () {
+  // GEOLOCATION
+  const pos = await getPosition();
+  const { latitude: lat, longitude: lng } = pos.coords;
+
+  // REVERSE GEOCODING
+  const resGeo = await fetch(
+    `https://geocode.xyz/${lat},${lng}?geoit=json&auth=745935440315315941873x86388`
+  );
+  const dataGeo = await resGeo.json();
+
+  // COUNTRY DATA
+  const res = await fetch(
+    `https://restcountries.com/v3.1/name/${dataGeo?.country}`
+  );
+  const data = await res.json();
+  countriesContainer.style.opacity = 1;
+  renderCountry(data[0]);
+};
+
+whereAmI();
+*/
