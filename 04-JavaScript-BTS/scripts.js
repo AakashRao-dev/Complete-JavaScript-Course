@@ -106,3 +106,65 @@ matilda.calcAge();
 const f = jonas.calcAge;
 f();
 */
+
+// ======================================================
+// ========= REGULAR FUNCTION VS ARROW FUNCTION =========
+
+/*
+const aakash = {
+  firstName: 'Aakash',
+  year: 2003,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2037 - this.year);
+
+    // PRE_ES6 SOLUTION
+    const self = this;
+    const isMillenial = function () {
+      console.log(self);
+      console.log(self.year >= 1981 && self.year <= 1996);
+      // console.log(this.year >= 1981 && this.year <= 1996);
+      // not gonna work as expected
+    };
+    isMillenial();
+
+    // ARROW FUNCTION SOLUTION
+    const isGenz = () => {
+      console.log(this);
+      console.log(this.year >= 1990 && this.year <= 2010);
+    };
+    isGenz();
+  },
+
+  // Thumb rule for now: Never use arrow function as a method
+  greet: () => {
+    // console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  },
+};
+aakash.greet();
+aakash.calcAge();
+
+// ARGUMENTS KEYWORD - HOLLY SHIT!!
+// YOU CAN USE ARGS WITHOUT EVEN THOUGH THEY ARE NOT THE EXACT PARAMETERS DEFINED
+const addExpr = function (a, b) {
+  const myArgs = arguments;
+  let sumArgs = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sumArgs += arguments[i];
+  }
+
+  console.log(sumArgs);
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+addExpr(2, 5, 8, 12);
+
+// ARROW FUNCTION DON'T HAVE ARGUMENTS KEYWORD
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+addArrow(2, 3);
+*/
